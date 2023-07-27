@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+body {
+  background-color: rgb(66, 62, 62);
+}
+.FilmCard {
+  width: 200px;
+  display: block;
+  margin-top: 20px;
+}
+.Item {
+  list-style-type: none;
+}
+.MovieList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.Overview {
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  height: 50px;
+}
+.Image {
+  width: 100%;
+  object-fit: contain !important
+}
+.CardTitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.NavBar{
+  width: 100%;
+  height: 200px;
+} 
+.NavBarLogo{
+  padding-left: 20px;
+}
+
+.NavBarText{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+}
