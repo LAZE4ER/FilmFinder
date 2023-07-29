@@ -1,14 +1,30 @@
 import { style } from "@mui/system";
 
 const NavBar = () => {
-  return(
-  <div className="NavBar">
-      <div className="NavBarText">
-      <h1 className="FilmFinderLogo">Film  Finder</h1>
-      <h2>Home</h2>
-      <h2>About Us</h2>
-      <a href="https://developer.themoviedb.org/docs">API</a>
+  return (
+    <div className="NavBar">
+      <h1 className="FilmFinderLogo">
+        <span className="FirstWord">Film</span>
+        <span className="SecondWord">Finder</span>
+      </h1>
+      <div className="navigation">
+        <a
+          href="https://www.themoviedb.org/?language=uk"
+          className="NavBarText"
+        >
+          Home
+        </a>
+        <a
+          href="https://www.themoviedb.org/movie?language=uk"
+          className="NavBarText"
+        >
+          Movies
+        </a>
+        <a href="https://developer.themoviedb.org/docs" className="NavBarText">
+          API
+        </a>
       </div>
-  </div>)
+    </div>
+  );
 };
 export default NavBar;

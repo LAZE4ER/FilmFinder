@@ -1,4 +1,4 @@
-import { Card, Typography, CardContent, CardMedia } from "@mui/material";
+import { Card, CardContent, CardMedia } from "@mui/material";
 import { style } from "@mui/system";
 import Overview from "./Overview";
 const MovieListItem = ({ movie, key }) => {
@@ -12,7 +12,8 @@ const MovieListItem = ({ movie, key }) => {
         className="Image"
       />
       <CardContent>
-        <Typography className="CardTitle" title={movie.title}>{movie.title}</Typography>
+        <h1 className="CardTitle">{movie.title}</h1>
+
         <Overview movieOverview={movie.overview} />
       </CardContent>
     </Card>
