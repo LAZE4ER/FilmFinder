@@ -1,13 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Kanit:wght@600&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Kanit:wght@600&family=Poppins:wght@500&family=Ubuntu:wght@500&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(32, 32, 32);
   margin: 0;
+}
+.light .FilmCard {
+  background-color: rgb(39, 39, 39);
+}
+.light .div {
+  background-color: rgb(255, 255, 255);
+}
+.light .Search-input {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+.light .Search-input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.light .CardTitle {
+  color: rgb(255, 255, 255);
+}
+.light .Overview {
+  color: rgb(255, 255, 255);
+}
+.light .SecondWord {
+  color: rgb(70, 182, 182);
+}
+.light .NavBarText {
+  color: rgb(59, 59, 59);
+}
+.light .FilmCard:hover {
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(46, 46, 46, 1);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(46, 46, 46, 1);
+  box-shadow: 10px 10px 18px 0px rgba(46, 46, 46, 1);
 }
 .FilmCard {
   width: 200px;
   display: block;
   margin-top: 20px;
+  text-decoration: none;
+  /* background-color: !important; */
 }
+
 .Item {
   list-style-type: none;
 }
@@ -24,7 +60,7 @@ body {
   font-size: 14px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 200;
-  height: 52px;
+  height: 49px;
 }
 .Image {
   width: 100%;
@@ -32,7 +68,7 @@ body {
   object-fit: contain !important;
 }
 .CardTitle {
-  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 23px;
   display: -webkit-box;
@@ -47,6 +83,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .navigation {
   display: flex;
@@ -63,11 +100,105 @@ body {
   color: rgb(211, 235, 255);
 }
 .NavBarText {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 200px;
   color: white;
   text-decoration: none;
   margin: 0;
   font-size: 23px;
   margin-right: 20px;
+}
+.Search {
+  display: flex;
+  height: 45px;
+  border-radius: 10px;
+  margin-right: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.SearchButton {
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  align-items: center;
+  background-color: #3636bb;
+  width: 100px;
+  border: none;
+  justify-content: center;
+  outline: 0;
+  outline-offset: 0;
+}
+.SearchButtonText {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  margin: 5px;
+  color: white;
+}
+
+.SearchButton:hover {
+  background-color: rgb(36, 36, 144);
+}
+
+.Search-input {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 15px 0px 0px 15px;
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  border: none;
+  justify-content: center;
+  outline: 0;
+  outline-offset: 0;
+}
+.Loader {
+  display: flex;
+  justify-content: center;
+}
+.mySwiper {
+  width: 75%;
+  height: 800px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Btn {
+  display: flex;
+  justify-content: center;
+}
+.LoaderBtn {
+  width: 450px;
+  height: 50px;
+  background-color: #3636bb;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+.LoaderBtn:hover {
+  background-color: rgb(36, 36, 144);
+}
+.NavBarText:hover {
+  color: rgb(164, 162, 162);
+}
+.FilmCard:hover {
+  -webkit-box-shadow: 5px 11px 11px -1px rgb(104, 104, 104);
+  -moz-box-shadow: 5px 11px 11px -1px rgb(104, 104, 104);
+  box-shadow: 5px 11px 11px -1px rgb(104, 104, 104);
 }

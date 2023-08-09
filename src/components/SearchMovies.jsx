@@ -2,7 +2,6 @@ import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 const SearchMovies = ({ onSearch }) => {
   function handleSubmit(e) {
-    const [query, setQuery] = useState("");
     e.preventDefault();
     onSearch(query);
   }
@@ -19,7 +18,7 @@ const SearchMovies = ({ onSearch }) => {
         onChange={(e) => setQuery(e.target.value)}
       />
       <button type="submit" className="SearchButton">
-        <BsSearch fontSize={20} />
+        <BsSearch color="white" fontSize="19px" />
         <span className="SearchButtonText">Search</span>
       </button>
     </form>
